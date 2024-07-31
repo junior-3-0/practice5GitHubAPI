@@ -23,7 +23,7 @@ const page = {
 
 let currentID;
 
-const getRepositoriesDebounce = debounce(getRepositories, 1500);
+const getRepositoriesDebounce = debounce(getRepositories, 700);
 
 page.input.addEventListener("input", () => {
   getRepositoriesDebounce(page.input.value, generateAutocomplite);
